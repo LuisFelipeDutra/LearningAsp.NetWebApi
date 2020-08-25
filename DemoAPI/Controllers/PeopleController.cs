@@ -31,8 +31,9 @@ namespace DemoAPI.Controllers
         }
 
         // POST: api/People
-        public void Post([FromBody]string value)
+        public void Post(Person newPerson)
         {
+            person.Add(newPerson);
         }
 
         // PUT: api/People/5
